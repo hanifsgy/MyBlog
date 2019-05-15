@@ -1,0 +1,3 @@
+# MyBlog
+
+Im nerd nercromancer
