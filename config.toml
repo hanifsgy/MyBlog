@@ -7,12 +7,10 @@ Paginate = 5
 [params]
   twitterName = "hanif_sgy"
   githubName = "hanifsgy"
-  subtitle = "Necromancer"
+  subtitle = ""
   commit = false
-  rss = true
   comments = true
   favicon = "favicon.ico"
-  blogTitle = "Coding Journal"
   readingTime = true
   delayDisqus = true
   showRelatedPosts = true

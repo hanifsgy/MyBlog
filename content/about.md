@@ -12,5 +12,5 @@ tags: []
 
 <p class="about-text">
 <span class="fa fa-briefcase about-icon"></span>
-Currently the <b>iOS developer</b> at <a href="https://www.extrainteger.com/">ExtraInteger</a>
+Currently the <b>iOS developer</b> at <a href="https://www.extrainteger.com/">ExtraInteger</a>. 
 </p>
