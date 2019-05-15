@@ -1,4 +1,54 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "HS.is"
-theme = "hugo-theme-cactus-plus"
+theme = "beautifulhugo"
+Paginate = 5
+
+[params]
+  twitterName = "hanif_sgy"
+  githubName = "hanifsgy"
+  subtitle = "Necromancer"
+  commit = false
+  rss = true
+  comments = true
+  favicon = "favicon.ico"
+  blogTitle = "Coding Journal"
+  readingTime = true
+  delayDisqus = true
+  showRelatedPosts = true
+  since = 2019
+  selfHosted = true
+
+[Author]
+  name = "Hanif Sugiyanto"
+  email = "hanifsgy@gmail.com"
+  github = "hanifsgy"
+  twitter = "hanif_sgy"
+
+[[menu.main]]
+    name = "Blog"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 2
+
+[[menu.main]]
+    name = "About me / contact"
+    url = "/about/"
+    weight = 3
+
+[related]
+threshold = 80
+includeNewer = true
+toLower = true
+
+[[related.indices]]
+name = "keywords"
+weight = 150
+[[related.indices]]
+name  = "tags"
+weight = 100
+ 
