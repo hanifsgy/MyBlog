@@ -1,4 +1,4 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "HS.is"
-theme = "Cactus Plus"
+theme = "cactus-plus"
