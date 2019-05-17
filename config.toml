@@ -35,16 +35,3 @@ Paginate = 5
     name = "About me / contact"
     url = "/about/"
     weight = 3
-
-[related]
-threshold = 80
-includeNewer = true
-toLower = true
-
-[[related.indices]]
-name = "keywords"
-weight = 150
-[[related.indices]]
-name  = "tags"
-weight = 100
- 
