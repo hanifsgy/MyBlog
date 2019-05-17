@@ -1,7 +1,7 @@
 ---
 title: "Memory Management: Weak and Unowned"
 date: 2019-05-16T18:30:49+07:00
-draft: true
+draft: false
 ---
 
 ### Automatic Reference Counting
