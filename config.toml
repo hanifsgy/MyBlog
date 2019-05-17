@@ -1,4 +1,4 @@
-baseURL = "https://www.hanifsgy.com"
+baseURL = "https://www.hanifsgy.com/"
 languageCode = "en-us"
 title = "HS.is"
 theme = "hugo-theme-slim"
