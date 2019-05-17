@@ -8,9 +8,12 @@ image: ""
 tags: []
 ---
 
-<div id="aboutme-section">
+Currently iOS developer at [ExtraInteger](www.extrainteger.com). This blog just for share what I want to share especially about programming world of iOS and Swift. Take a look some sample I've done with an open source [project](https://github.com/pantaubersama/PemiluIOS).
+Let's get in touch.
 
-<p class="about-text">
-<span class="fa fa-briefcase about-icon"></span>
-Currently the <b>iOS developer</b> at <a href="https://www.extrainteger.com/">ExtraInteger</a>. 
-</p>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Add font awesome icons -->
+<a href="https://www.facebook.com/muhammadhanif.sugiyanto" class="fa fa-facebook"></a>
+<a href="https://twitter.com/hanif_sgy" class="fa fa-twitter"></a>
+<a href="https://github.com/hanifsgy" class="fa fa-github"></a>
+<a href="https://www.linkedin.com/in/muhammad-hanif-sugiyanto-874476b1/" class="fa fa-linkedin"></a>

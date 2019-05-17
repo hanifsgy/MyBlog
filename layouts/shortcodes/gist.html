@@ -1,0 +1,5 @@
+{{ if .Get "file"}}
+<div data-gist="{{ .Get "id" }}" data-file="{{ .Get "file" }}"></div>
+{{ else }}
+<div data-gist="{{ .Get "id" }}"></div>
+{{ end }}

@@ -1,21 +1,19 @@
 baseURL = "https://www.hanifsgy.com"
 languageCode = "en-us"
 title = "HS.is"
-theme = "beautifulhugo"
+theme = "hugo-theme-slim"
 Paginate = 5
 
 [params]
-  twitterName = "hanif_sgy"
-  githubName = "hanifsgy"
-  subtitle = ""
-  commit = false
-  comments = true
-  favicon = "favicon.ico"
-  readingTime = true
-  delayDisqus = true
-  showRelatedPosts = true
-  since = 2019
-  selfHosted = true
+  Subtitle = "Weekly Note Taking iOS Swift"
+  GithubID = "hanifsgy"
+  TwitterID = "hanif_sgy"
+  #AnalyticsID = "Your Google Analytics tracking code"
+  #DisqusShortname = "Your Disqus shortname"
+  Summary = true  # takes true or false
+  Content = false  # takes true or false
+  # if both are set to true, summary is shown.
+  # FooterMsg = "Copyright Me 2016. Powered by Hugo."
 
 [Author]
   name = "Hanif Sugiyanto"
