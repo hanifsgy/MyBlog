@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title> Memory Management: Weak and Unowned &middot; HS.is </title>
+
+
+<link rel="stylesheet" href="https://www.hanifsgy.com/css/slim.css">
+<link rel="stylesheet" href="https://www.hanifsgy.com/css/highlight.min.css">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro' rel='stylesheet' type='text/css'>
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/favicon.ico">
+
+
+<link href="" rel="alternate" type="application/rss+xml" title="HS.is" />
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+  <h1 class="site-title"><a href="https://www.hanifsgy.com/">HS.is</a></h1>
+  <p class="site-tagline">Weekly Note Taking iOS Swift</p>
+  <div class="nav">
+    <a class="nav-btn" href="#">
+      <span class="ci ci-burger"></span>
+    </a>
+    <ul class="nav-list">
+      
+      <li><a href="/">Blog</a></li>
+      
+      <li><a href="/projects/">Projects</a></li>
+      
+      <li><a href="/about/">About me / contact</a></li>
+       
+	  <li class="spacer">&ac;</li>
+
+      <li><a href="https://github.com/hanifsgy">Github</a></li> 
+      <li><a href="https://twitter.com/hanif_sgy">Twitter</a></li> 
+    </ul>
+  </div>
+</div>
+    <div class="content">
+      <div class="posts">
+        <div class="post">
+          <h2 class="post-title"><a href="https://www.hanifsgy.com/post/memory-management-weak-and-unowned/">Memory Management: Weak and Unowned</a></h2>
+          <span class="post-date">May 16, 2019 </span>
+          <div class="post-content">
+            
+
+<h3 id="automatic-reference-counting">Automatic Reference Counting</h3>
+
+<p>Swift uses <em>Automatic Reference Counting</em> (ARC) to track and manage your app&rsquo;s memory usage.  You can check <a href="https://docs.swift.org/swift-book/LanguageGuide/AutomaticReferenceCounting.html">Swift docs</a> for more detail information to memory management.</p>
+
+<blockquote>
+<p>Whenever you assign a class instance to a property, constant, or variable, that property, constant, or variable makes a <em>strong reference</em> to the instance. The reference is called a “strong” reference because it keeps a firm hold on that instance, and does not allow it to be deallocated for as long as that strong reference remains.</p>
+
+<p>Reference counting applies only to <strong>instance</strong> of classes. <strong>Structures</strong> and <strong>enumerations</strong> are <strong>value</strong> types, not reference types, and are not stored and passed by reference—  <a href="https://www.avanderlee.com/swift/weak-self/">source</a>.</p>
+</blockquote>
+
+<h3 id="simple-usage">Simple Usage 🤘</h3>
+
+<p><code>weak self</code> and <code>unowned self</code> give ARC the required information between relationships in our code. For more detail to define <code>weak self</code> and <code>unowned self</code>:</p>
+
+<h5 id="weak">Weak</h5>
+
+<ul>
+<li>Always used on <em>var</em></li>
+<li>Always used on an <em>optionals</em></li>
+<li>Automatically changes itself to nil when the underlying reference  go away</li>
+</ul>
+
+<h4 id="unowned">Unowned</h4>
+
+<ul>
+<li><p>Always used with <em>non-optional</em> types</p></li>
+
+<li><p>Automatically <em>crash</em> if you access it and the underlying reference is gone</p></li>
+</ul>
+
+<h3 id="best-practices">Best Practices 🧠</h3>
+
+<h4 id="example-weak">Example: Weak</h4>
+
+<p>When to use <code>weak self</code> ? The simple answer is whenever we declared <em>instance</em> optional variable as they can automatically be set to <code>nil</code>.  This example defines two classes called <code>Fighter</code> and <code>Champion</code>, which model a block of <code>champion</code> and its <code>fighter</code>:</p>
+
+<pre><code class="language-swift">class Fighter {
+    let name: String
+    var champion: Champion?
+    
+    init(name: String) {
+        self.name = name
+    }
+    
+    deinit {
+        print(&quot;Fighter \(name) is being deinitialized&quot;)
+    }
+}
+
+class Champion {
+    let year: Int
+    var fighter: Fighter?
+    
+    init(year: Int) {
+        self.year = year
+    }
+    
+    deinit {
+        print(&quot;Fighter \(fighter?.name ?? &quot;&quot;) is being deinitialized&quot;)
+    }
+}
+
+var fighter: Fighter? = Fighter(name: &quot;Chris John&quot;)
+var champion: Champion? = Champion(year: 2011)
+
+fighter!.champion = champion
+champion!.fighter = fighter
+
+fighter = nil
+champion = nil
+</code></pre>
+
+<p>Every <code>Fighter</code> instance has a <code>name</code> property of type <code>String</code> and an optional <code>champion</code> that is initially to be <code>nil</code>. The <code>champion</code> property is optional, because some <code>fighter</code> may not always have a title <code>champion</code>.  Similarly, every <code>Champion</code> instances have a <code>year</code> property of type <code>String</code> and an optional <code>fighter</code> property that is initially nil. I assume in this case  <code>champion</code> may not always have the same <code>fighter</code> 🙊.</p>
+
+<p>Linking these two instances creates a strong reference between <code>Fighter</code> and <code>Champion</code>. The <code>Fighter</code> ha a strong reference to <code>Champion</code> instance, and the <code>Champion</code> instance has a strong reference to the <code>Fighter</code>. Gotcha! You found a retain cycle 👀.</p>
+
+<h4 id="solving-weak">Solving Weak</h4>
+
+<p>A Simple solution to handle this strong reference is to make <code>Champion</code> type&rsquo;s <code>fighter</code> property is declared as a <code>weak</code> reference. Because in this case, we need just one <code>weak</code> reference to break the loop / retain cycle. A <code>weak</code> reference doesn&rsquo;t increment the referenced object&rsquo;s retain count, while still letting us get access to the object while it&rsquo;s still in memory. And in another case, sometimes we meet <code>weak self</code> inside the closure, but why? if <code>self</code> also retains the closure you must use the <code>weak</code> combined with <code>self</code>.</p>
+
+<blockquote>
+<p>Always use weak combined with self inside closures to avoid retain cycle.</p>
+</blockquote>
+
+<h4 id="unowned-self">Unowned Self</h4>
+
+<p>Like a weak reference, <code>unowned</code> does not keep a strong hold on the instance. According to the Apple docs, when to use <code>unowned self</code></p>
+
+<blockquote>
+<p>Use a weak reference whenever it is valid for that reference to become nil at some point during its lifetime. Conversely, use an unowned reference when you know that the reference will never be nil once it has been set during initialization.</p>
+</blockquote>
+
+<p>An <code>unowned</code> reference is expected to always have a value. As a result, ARC never sets an unowned reference’s value to <code>nil</code>, which means that unowned references are defined using non-optional types. Unfortunately, if you&rsquo;re accessing an instance which no longer there can cause a crash. <code>weak</code> is always safer 🤗.</p>
+
+          </div>
+        </div>
+        <div class="pagination">
+          <a class="btn previous " href="https://www.hanifsgy.com/about/"> Prev</a>  
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer">
+  
+  <p>Powered by <a href="https://gohugo.io">Hugo</a>. This theme—Slim—is open sourced on <a href="https://github.com/zhe/hugo-theme-slim">Github</a>.</p>
+  
+</div>
+
+  </div>
+  <script src="https://www.hanifsgy.com/js/slim.js"></script>
+  <script src="https://www.hanifsgy.com/js/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  
+</body>
+
+</html>

@@ -8,18 +8,19 @@
     <language>en-us</language>
     <managingEditor>hanifsgy@gmail.com (Hanif Sugiyanto)</managingEditor>
     <webMaster>hanifsgy@gmail.com (Hanif Sugiyanto)</webMaster>
-    <lastBuildDate>Wed, 15 May 2019 18:03:46 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 16 May 2019 18:30:49 +0700</lastBuildDate>
     
 	<atom:link href="https://www.hanifsgy.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Welcome</title>
-      <link>https://www.hanifsgy.com/post/welcome/</link>
-      <pubDate>Wed, 15 May 2019 18:03:46 +0700</pubDate>
+      <title>Memory Management: Weak and Unowned</title>
+      <link>https://www.hanifsgy.com/post/memory-management-weak-and-unowned/</link>
+      <pubDate>Thu, 16 May 2019 18:30:49 +0700</pubDate>
       <author>hanifsgy@gmail.com (Hanif Sugiyanto)</author>
-      <guid>https://www.hanifsgy.com/post/welcome/</guid>
-      <description></description>
+      <guid>https://www.hanifsgy.com/post/memory-management-weak-and-unowned/</guid>
+      <description>Automatic Reference Counting Swift uses Automatic Reference Counting (ARC) to track and manage your app&amp;rsquo;s memory usage. You can check Swift docs for more detail information to memory management.
+ Whenever you assign a class instance to a property, constant, or variable, that property, constant, or variable makes a strong reference to the instance. The reference is called a “strong” reference because it keeps a firm hold on that instance, and does not allow it to be deallocated for as long as that strong reference remains.</description>
     </item>
     
   </channel>
