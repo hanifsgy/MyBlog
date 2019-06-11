@@ -7,14 +7,14 @@ enableEmoji = true
 
 [params]
   Subtitle = "Weekly Note Taking iOS Swift"
-  GithubID = "hanifsgy"
-  TwitterID = "hanif_sgy"
+  #GithubID = "hanifsgy"
+  #TwitterID = "hanif_sgy"
   #AnalyticsID = "Your Google Analytics tracking code"
   #DisqusShortname = "Your Disqus shortname"
   Summary = true  # takes true or false
-  Content = false  # takes true or false
+  Content = true  # takes true or false
   # if both are set to true, summary is shown.
-  # FooterMsg = "Copyright Me 2016. Powered by Hugo."
+  FooterMsg = "Powered by Hugo."
 
 [Author]
   name = "Hanif Sugiyanto"
