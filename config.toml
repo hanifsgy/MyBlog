@@ -4,6 +4,7 @@ title = "SGY"
 theme = "hugo-theme-slim"
 Paginate = 5
 enableEmoji = true
+googleAnalytics = "G-G4YB2VNXD1"
 
 [params]
   Subtitle = "Weekly Note Taking iOS Swift"
