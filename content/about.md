@@ -8,7 +8,7 @@ image: ""
 tags: []
 ---
 
-Currently iOS developer at [ExtraInteger](www.extrainteger.com). This blog just for share what I want to share especially about programming world of iOS and Swift. Take a look some sample I've done with an open source [project](https://github.com/pantaubersama/PemiluIOS).
+This blog just for share what I want to share especially about programming world of iOS and Swift. Take a look some sample I've done with an open source [project](https://github.com/pantaubersama/PemiluIOS).
 Let's get in touch ☕️.
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
