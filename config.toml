@@ -1,6 +1,6 @@
 baseURL = "https://www.hanifsgy.com/"
 languageCode = "en-us"
-title = "HS.is"
+title = "SGY"
 theme = "hugo-theme-slim"
 Paginate = 5
 enableEmoji = true
