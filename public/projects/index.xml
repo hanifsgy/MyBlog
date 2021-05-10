@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on SGY</title>
+    <link>https://www.hanifsgy.com/projects/</link>
+    <description>Recent content in Projects on SGY</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>hanifsgy@gmail.com (Hanif Sugiyanto)</managingEditor>
+    <webMaster>hanifsgy@gmail.com (Hanif Sugiyanto)</webMaster>
+    <lastBuildDate>Wed, 15 May 2019 22:00:47 +0700</lastBuildDate><atom:link href="https://www.hanifsgy.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sipmi</title>
+      <link>https://www.hanifsgy.com/projects/sipmi/</link>
+      <pubDate>Wed, 15 May 2019 22:00:47 +0700</pubDate>
+      <author>hanifsgy@gmail.com (Hanif Sugiyanto)</author>
+      <guid>https://www.hanifsgy.com/projects/sipmi/</guid>
+      <description>dsdsd</description>
+    </item>
+    
+  </channel>
+</rss>

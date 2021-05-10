@@ -1,37 +1,39 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
+    <loc>https://www.hanifsgy.com/post/intro-bazel/</loc>
+    <lastmod>2021-05-10T21:18:00+07:00</lastmod>
+  </url><url>
+    <loc>https://www.hanifsgy.com/post/</loc>
+    <lastmod>2021-05-10T21:18:00+07:00</lastmod>
+  </url><url>
     <loc>https://www.hanifsgy.com/</loc>
-    <lastmod>2019-05-16T18:30:49+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+    <lastmod>2021-05-10T21:18:00+07:00</lastmod>
+  </url><url>
+    <loc>https://www.hanifsgy.com/post/frameworks-and-libraries/</loc>
+    <lastmod>2020-07-05T12:33:23+07:00</lastmod>
+  </url><url>
+    <loc>https://www.hanifsgy.com/post/play-with-chunks/</loc>
+    <lastmod>2019-06-19T16:19:10+07:00</lastmod>
+  </url><url>
+    <loc>https://www.hanifsgy.com/post/ios-mvvmc-using-rxswift-clean-tabbarcontroller/</loc>
+    <lastmod>2019-06-11T13:42:49+07:00</lastmod>
+  </url><url>
     <loc>https://www.hanifsgy.com/post/memory-management-weak-and-unowned/</loc>
     <lastmod>2019-05-16T18:30:49+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.hanifsgy.com/post/</loc>
-    <lastmod>2019-05-16T18:30:49+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://www.hanifsgy.com/projects/</loc>
+    <lastmod>2019-05-15T22:00:47+07:00</lastmod>
+  </url><url>
+    <loc>https://www.hanifsgy.com/projects/sipmi/</loc>
+    <lastmod>2019-05-15T22:00:47+07:00</lastmod>
+  </url><url>
     <loc>https://www.hanifsgy.com/about/</loc>
     <lastmod>2019-05-15T16:37:14+07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.hanifsgy.com/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.hanifsgy.com/tags/</loc>
-    <priority>0</priority>
   </url>
-  
 </urlset>

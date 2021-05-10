@@ -1,17 +1,53 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>HS.is</title>
+    <title>SGY</title>
     <link>https://www.hanifsgy.com/</link>
-    <description>Recent content on HS.is</description>
+    <description>Recent content on SGY</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>hanifsgy@gmail.com (Hanif Sugiyanto)</managingEditor>
     <webMaster>hanifsgy@gmail.com (Hanif Sugiyanto)</webMaster>
-    <lastBuildDate>Thu, 16 May 2019 18:30:49 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 10 May 2021 21:18:00 +0700</lastBuildDate><atom:link href="https://www.hanifsgy.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intro Bazel</title>
+      <link>https://www.hanifsgy.com/post/intro-bazel/</link>
+      <pubDate>Mon, 10 May 2021 21:18:00 +0700</pubDate>
+      <author>hanifsgy@gmail.com (Hanif Sugiyanto)</author>
+      <guid>https://www.hanifsgy.com/post/intro-bazel/</guid>
+      <description>Intro Bazel Fast, Correct
+Xcode Build System When we develop iOS Application, Xcode is the best choice right now. Xcode are smarter IDE but lack of build systems. The main goal of Xcode Build System is to orchestrate execution of various task that will eventually produce an executable program. Xcode build system is like a black box. Just click Run or cmd + b Xcode will gather all your code and build the applications.</description>
+    </item>
     
-	<atom:link href="https://www.hanifsgy.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Frameworks and Libraries</title>
+      <link>https://www.hanifsgy.com/post/frameworks-and-libraries/</link>
+      <pubDate>Sun, 05 Jul 2020 12:33:23 +0700</pubDate>
+      <author>hanifsgy@gmail.com (Hanif Sugiyanto)</author>
+      <guid>https://www.hanifsgy.com/post/frameworks-and-libraries/</guid>
+      <description>Frameworks and Libraries Frameworks A framework is a hierarchical directory that encapsulates shared resources, such as a dynamic shared library, nib files, image files, localized strings, header files, and reference documentation in a single package. Multiple applications can use all of these resources simultaneously. The system loads them into memory as needed and shares the one copy of the resource among all applications whenever possible —Apple.
+Splitting code into smaller frameworks have some advantages in iOS development.</description>
+    </item>
     
+    <item>
+      <title>Play With Chunks</title>
+      <link>https://www.hanifsgy.com/post/play-with-chunks/</link>
+      <pubDate>Wed, 19 Jun 2019 16:19:10 +0700</pubDate>
+      <author>hanifsgy@gmail.com (Hanif Sugiyanto)</author>
+      <guid>https://www.hanifsgy.com/post/play-with-chunks/</guid>
+      <description>Have you imagine 😇 you have an array of elements and you want to split them into chunks of a size you specify. Here&amp;rsquo;s the extension
+extension Collection { func chunked(by maxLength: Int) -&amp;gt; [SubSequence] { precondition(maxLength &amp;gt; 0, &amp;#34;chunk size must be greater than zero&amp;#34;) var start = startIndex return stride(from: 0, to: count, by: maxLength).map { _ in let end = index(start, offsetBy: maxLength, limitedBy: endIndex) ?? endIndex defer { start = end } return self[start.</description>
+    </item>
+    
+    <item>
+      <title>IOS MVVMC Using RxSwift: Clean TabBarController</title>
+      <link>https://www.hanifsgy.com/post/ios-mvvmc-using-rxswift-clean-tabbarcontroller/</link>
+      <pubDate>Tue, 11 Jun 2019 13:42:49 +0700</pubDate>
+      <author>hanifsgy@gmail.com (Hanif Sugiyanto)</author>
+      <guid>https://www.hanifsgy.com/post/ios-mvvmc-using-rxswift-clean-tabbarcontroller/</guid>
+      <description>Intro Since Soroush Khanlou presented Coordinator, there are many differents ways to approach his method. Coordinator solve a common problem big logic inside UIViewController. Coordinator pattern encapsulates a part of the application. Coordinator like an activator to present, push or dismiss UIViewController while keeping the UIViewController separate and independent.
+ To really execute this pattern well, you need one high-level coordinator that directs the whole app (this is sometimes known as the Application Controller pattern).</description>
+    </item>
     
     <item>
       <title>Memory Management: Weak and Unowned</title>
@@ -24,12 +60,21 @@
     </item>
     
     <item>
+      <title>Sipmi</title>
+      <link>https://www.hanifsgy.com/projects/sipmi/</link>
+      <pubDate>Wed, 15 May 2019 22:00:47 +0700</pubDate>
+      <author>hanifsgy@gmail.com (Hanif Sugiyanto)</author>
+      <guid>https://www.hanifsgy.com/projects/sipmi/</guid>
+      <description>dsdsd</description>
+    </item>
+    
+    <item>
       <title>About</title>
       <link>https://www.hanifsgy.com/about/</link>
       <pubDate>Wed, 15 May 2019 16:37:14 +0700</pubDate>
       <author>hanifsgy@gmail.com (Hanif Sugiyanto)</author>
       <guid>https://www.hanifsgy.com/about/</guid>
-      <description>Currently iOS developer at ExtraInteger. This blog just for share what I want to share especially about programming world of iOS and Swift. Take a look some sample I&amp;rsquo;ve done with an open source project. Let&amp;rsquo;s get in touch ☕️.</description>
+      <description>This blog just for share what I want to share especially about programming world of iOS and Swift. Take a look some sample I&amp;rsquo;ve done with an open source project. Let&amp;rsquo;s get in touch ☕️.</description>
     </item>
     
   </channel>
