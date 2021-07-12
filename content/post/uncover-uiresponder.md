@@ -3,10 +3,10 @@ title: "Uncover UIResponder"
 date: 2021-07-12T22:13:55+07:00
 draft: false
 ---
-<h1 style="text-align: center"> Uncover UIResponder </h1>
-<div style="text-align: center"><small>July - 2021</small></div>
 
-## ![Screen Shot 2021-07-12 at 22.00.11](/Users/m.hanif.sugiyanto/Desktop/Screen Shot 2021-07-12 at 22.00.11.png)
+<p align="center">
+  <img src="https://docs-assets.developer.apple.com/published/7c21d852b9/f17df5bc-d80b-4e17-81cf-4277b1e0f6e4.png" style="height:400px"/>
+</p>
 
 Based on the Figure 1 we can define who is the responder
 
@@ -33,13 +33,9 @@ Based on the Figure 1 we can define who is the responder
 Key:
 
 `UIResponder` An abstract interface for responding to and handling events
-
 `UIEvent` An object that describes a single user interaction with your app
 
-
-
-### References
+#### References
 
 https://developer.apple.com/documentation/uikit/touches_presses_and_gestures/using_responders_and_the_responder_chain_to_handle_events
-
 https://medium.com/macoclock/responder-chain-you-should-understand-in-ios-54e96b0c4bb1
