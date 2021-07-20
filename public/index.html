@@ -1,78 +1,111 @@
 <!DOCTYPE html>
 <html lang="en-us">
+  <head>
+    <meta name="generator" content="Hugo 0.55.5" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+    <title>HS.is &middot; HS.is</title>
 
-<head>
-	<meta name="generator" content="Hugo 0.55.5" />
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<title> HS.is &middot; HS.is </title>
+    <link rel="stylesheet" href="https://www.hanifsgy.com/css/slim.css" />
+    <link
+      rel="stylesheet"
+      href="https://www.hanifsgy.com/css/highlight.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro"
+      rel="stylesheet"
+      type="text/css"
+    />
 
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="/apple-touch-icon-144-precomposed.png"
+    />
+    <link rel="shortcut icon" href="/favicon.ico" />
 
-<link rel="stylesheet" href="https://www.hanifsgy.com/css/slim.css">
-<link rel="stylesheet" href="https://www.hanifsgy.com/css/highlight.min.css">
-<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <link
+      href="https://www.hanifsgy.com/index.xml"
+      rel="alternate"
+      type="application/rss+xml"
+      title="HS.is"
+    />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-202741078-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
-<link rel="shortcut icon" href="/favicon.ico">
+      gtag("config", "UA-202741078-1");
+    </script>
+  </head>
 
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 class="site-title">
+          <a href="https://www.hanifsgy.com/">HS.is</a>
+        </h1>
+        <p class="site-tagline">Weekly Note Taking iOS Swift</p>
+        <div class="nav">
+          <a class="nav-btn" href="#">
+            <span class="ci ci-burger"></span>
+          </a>
+          <ul class="nav-list">
+            <li><a href="/">Blog</a></li>
 
-<link href="https://www.hanifsgy.com/index.xml" rel="alternate" type="application/rss+xml" title="HS.is" />
+            <li><a href="/projects/">Projects</a></li>
 
-</head>
+            <li><a href="/about/">About me / contact</a></li>
 
-<body>
-  <div class="container">
-    <div class="header">
-  <h1 class="site-title"><a href="https://www.hanifsgy.com/">HS.is</a></h1>
-  <p class="site-tagline">Weekly Note Taking iOS Swift</p>
-  <div class="nav">
-    <a class="nav-btn" href="#">
-      <span class="ci ci-burger"></span>
-    </a>
-    <ul class="nav-list">
-      
-      <li><a href="/">Blog</a></li>
-      
-      <li><a href="/projects/">Projects</a></li>
-      
-      <li><a href="/about/">About me / contact</a></li>
-       
-	  <li class="spacer">&ac;</li>
-  
-    </ul>
-  </div>
-</div>
-    <div class="content">
-      <div class="posts">
-         
-        <div class="post">
-          <h2 class="post-title"><a href="https://www.hanifsgy.com/post/memory-management-weak-and-unowned/">Memory Management: Weak and Unowned</a></h2>
-          <span class="post-date">May 16, 2019</span>
-		  
-		  
-		  	<div class="summary">
-				Automatic Reference Counting Swift uses Automatic Reference Counting (ARC) to track and manage your app&rsquo;s memory usage. You can check Swift docs for more detail information to memory management.
- Whenever you assign a class instance to a property, constant, or variable, that property, constant, or variable makes a strong reference to the instance. The reference is called a “strong” reference because it keeps a firm hold on that instance, and does not allow it to be deallocated for as long as that strong reference remains.
-				<a class="read-more" href="/post/memory-management-weak-and-unowned/">&hellip;</a>
-			</div>
-		  
+            <li class="spacer">&ac;</li>
+          </ul>
         </div>
-        
       </div>
-      <div class="pagination">
-   
-</div>
+      <div class="content">
+        <div class="posts">
+          <div class="post">
+            <h2 class="post-title">
+              <a
+                href="https://www.hanifsgy.com/post/memory-management-weak-and-unowned/"
+                >Memory Management: Weak and Unowned</a
+              >
+            </h2>
+            <span class="post-date">May 16, 2019</span>
+
+            <div class="summary">
+              Automatic Reference Counting Swift uses Automatic Reference
+              Counting (ARC) to track and manage your app&rsquo;s memory usage.
+              You can check Swift docs for more detail information to memory
+              management. Whenever you assign a class instance to a property,
+              constant, or variable, that property, constant, or variable makes
+              a strong reference to the instance. The reference is called a
+              “strong” reference because it keeps a firm hold on that instance,
+              and does not allow it to be deallocated for as long as that strong
+              reference remains.
+              <a
+                class="read-more"
+                href="/post/memory-management-weak-and-unowned/"
+                >&hellip;</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="pagination"></div>
+      </div>
+      <div class="footer">
+        <p>Powered by Hugo.</p>
+      </div>
     </div>
-    <div class="footer">
-  
-  <p>Powered by Hugo.</p>
-  
-</div>
-
-  </div>
-  <script src="https://www.hanifsgy.com/js/slim.js"></script>
-  
-
-</body>
-
+    <script src="https://www.hanifsgy.com/js/slim.js"></script>
+  </body>
 </html>
